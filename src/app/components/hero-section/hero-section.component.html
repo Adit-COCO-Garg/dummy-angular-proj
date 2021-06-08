@@ -1,0 +1,22 @@
+<h1>Top Stories</h1>
+<section class="articles-sec-1">
+  <div *ngFor="let article of this.data?.articles" >
+      <mat-card class="article" *ngIf="article.urlToImage">
+        <mat-card-header>
+          <mat-card-title>{{article.title}}</mat-card-title>
+          <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{article.urlToImage}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{article.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</section>
+ 

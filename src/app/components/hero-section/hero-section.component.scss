@@ -1,0 +1,16 @@
+.article {
+    height: fit-content;
+    width: 300px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.articles-sec-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 2500px;
+    width: 100%;
+    align-content: flex-start;
+    margin: 2rem auto;
+}

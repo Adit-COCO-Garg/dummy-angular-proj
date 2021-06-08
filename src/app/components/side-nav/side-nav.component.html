@@ -1,0 +1,29 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <header class="app-header">
+        <nav class="left-nav">
+          
+          <button id="hamburger" mat-stroked-button color="primary" (click)="drawer.toggle()">
+            Toggle sidenav
+          </button>
+          <h1 class="mat-display-1">Times of Lorem</h1>
+        </nav>
+        
+        
+        <nav class="right-nav">
+          <a href="#">Contact</a><a href="#">About</a><button class="btn-icon" color="accent" mat-stroked-button (click)="drawer.toggle()"><mat-icon aria-hidden="false" aria-label="User account icon">face</mat-icon></button>
+        </nav>
+      </header>
+      
+      <ng-content></ng-content>
+    </div>
+  
+  </mat-drawer-container>
