@@ -19,6 +19,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { CardComponent } from './components/card/card.component';
+import { ArticlesService } from './services/articles.service';
 
 
 
@@ -43,7 +44,7 @@ import { CardComponent } from './components/card/card.component';
     MatCardModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [ArticlesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

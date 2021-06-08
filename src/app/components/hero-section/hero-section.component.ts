@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from 'src/app/interfaces/articles';
+import {MatCardModule} from '@angular/material/card';
 
 import {ArticlesService} from '../../services/articles.service';
 
